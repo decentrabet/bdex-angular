@@ -21,7 +21,22 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "assert": [
+        "./node_modules/assert"
+      ],
+      "process": [
+        "./node_modules/process"
+      ],
+      "fs": [
+        "./node_modules/fs-web"
+      ],
+      "path": [
+        "./node_modules/path-browserify"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

@@ -18,6 +18,13 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+    "@betdex/anchor": "0.0.2",
+    "@betdex/utils": "0.0.8",
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "fs-web": "^1.0.1",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
