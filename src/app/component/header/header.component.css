@@ -1,0 +1,85 @@
+.toolbar {
+    height: 100%;
+}
+
+.header_class {
+    width: 110vw;
+    float: left;
+    position: fixed;
+    top: 0px;
+    height: 8%;
+    left: 0px;
+    background-color: #673ab7;
+    z-index:10;
+  }
+
+  .header-column:hover {
+      color: #673ab7;
+      background-color: white;
+  }
+
+  .header-column-with-hover {
+    color: #673ab7;
+    background-color: white;
+    width: 36%;
+  }
+  .header-column-icon {
+      margin-bottom: 0.5%;
+  }
+  .header-column-icon:hover {
+    color: #673ab7;
+    background-color: white;
+  }
+
+  .header-column-logout {
+      width: 40%;
+  }
+
+  .tabs {
+      width: 50%;
+  }
+
+  .altura-descricao-header {
+      max-width: 100%;
+  }
+
+  .header-column-logout:hover {
+    color: #673ab7;
+    background-color: white;
+}
+
+  .header-column-network {
+      width: 54%;
+  }
+
+  .header-column {
+      width: 36%;
+  }
+
+  .header-column-network:hover {
+    color: #673ab7;
+    background-color: white;
+}
+
+.header-column-network-first:hover {
+    color: #673ab7;
+    background-color: white;
+}
+
+.logo:hover{
+    color: #673ab7;
+    background-color: white;
+}
+
+  .first-element-header {
+      padding-left: 1%;
+      width: 35%;
+  }
+
+  .altura-descricao-header {
+      margin-bottom: 15px;
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
