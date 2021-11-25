@@ -1,5 +1,20 @@
-table {
+.tablecomps {
   width: 30%;
+  float: left;
+}
+
+.tablecomps table {
+  width: 100%;
+}
+
+.tableGames {
+  width: 68%;
+  float: left;
+  margin-left: 1.5%;
+}
+
+.tableGames table{
+  width: 100%;
 }
 
 tr.example-detail-row {

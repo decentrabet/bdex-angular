@@ -32,7 +32,6 @@ import { HomeComponent } from './component/home/home.component';
 import { CompetitionComponent } from './component/competition/competition.component';
 import {MatCardModule} from '@angular/material/card';
 import { SidenavComponent } from './component/sidenav/sidenav.component';
-import { CompetitionGamesComponent } from './component/competition-games/competition-games.component';
 
 
 @NgModule({
@@ -42,7 +41,6 @@ import { CompetitionGamesComponent } from './component/competition-games/competi
     HomeComponent,
     CompetitionComponent,
     SidenavComponent,
-    CompetitionGamesComponent
   ],
   imports: [
     BrowserModule,

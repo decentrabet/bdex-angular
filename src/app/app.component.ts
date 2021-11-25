@@ -8,6 +8,18 @@ import * as anchor from '@betdex/anchor';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  public showSideNav: boolean = true;
+
+  sideNavAction(show: string){
+      if(show === "TRUE") {
+        this.showSideNav = true;
+      }
+      else {
+        this.showSideNav = false;
+      }
+  }
+
   ngOnInit() {
     
   }

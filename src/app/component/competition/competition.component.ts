@@ -6,6 +6,21 @@ import * as anchor from '@betdex/anchor';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import { Router } from '@angular/router';
 
+export interface teste {
+  home: string,
+  away: string
+}
+
+const ELEMENT_DATA: teste[] = [
+  {home: "casa", away: "fora"},
+  {home: "casa", away: "fora"},
+  {home: "casa", away: "fora"},
+  {home: "casa", away: "fora"},
+  {home: "casa", away: "fora"},
+  {home: "casa", away: "fora"},
+  {home: "casa", away: "fora"}
+];
+
 @Component({
   selector: 'app-competition',
   templateUrl: './competition.component.html',
@@ -28,7 +43,14 @@ export class CompetitionComponent implements OnInit {
   expandedElement: utils.Competition | null = null;
   title = 'bdex-angular';
   dataSource!: utils.Competition[];
+  games: teste[] = [];
+  showGamesFlag: boolean = false;
 
+
+  showGames(i: number) {
+    this.games = ELEMENT_DATA;
+    this.showGamesFlag = true;
+  }
 
   async ngOnInit() {
     const clientKp = anchor.web3.Keypair.fromSecretKey(Uint8Array.from([45,118,117,35,218,16,217,237,59,142,170,29,228,236,227,255,251,249,109,168,119,102,41,68,61,21,105,169,175,78,192,141,

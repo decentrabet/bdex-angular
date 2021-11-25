@@ -11,16 +11,23 @@
     padding-top: 20px;
   }
   
-  .sidenav a:hover {
+  .sidenav div:hover {
     color: #673ab7;
     background-color: white;
   }
   
-  .sidenav a {
+  .sidenav div {
+    width: 100%;
     margin-top: 25%;
     padding: 60px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
     color: white;
     display: block;
+  }
+
+  .sidenav div a {
+    text-decoration: none;
+      color: inherit;
+      
   }
