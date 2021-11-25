@@ -1,0 +1,20 @@
+<div class="content">
+
+    <mat-card> <button [routerLink]="['/competitions']" style="margin-bottom: 1%;"><mat-icon>keyboard_backspace</mat-icon></button>   {{comp.name}}</mat-card>
+    <table class="mat-elevation-z8">
+        <thead>
+            <tr>
+                <th>Home</th>
+                <th>Away</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let g of games">
+                <td>{{g.home}}</td>
+                <td>{{g.away}}</td>
+            </tr>
+        </tbody>
+    </table>
+      
+      
+</div>

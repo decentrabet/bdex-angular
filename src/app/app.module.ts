@@ -30,6 +30,9 @@ import {MatRadioModule} from '@angular/material/radio';
 import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './component/home/home.component';
 import { CompetitionComponent } from './component/competition/competition.component';
+import {MatCardModule} from '@angular/material/card';
+import { SidenavComponent } from './component/sidenav/sidenav.component';
+import { CompetitionGamesComponent } from './component/competition-games/competition-games.component';
 
 
 @NgModule({
@@ -37,7 +40,9 @@ import { CompetitionComponent } from './component/competition/competition.compon
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    CompetitionComponent
+    CompetitionComponent,
+    SidenavComponent,
+    CompetitionGamesComponent
   ],
   imports: [
     BrowserModule,
@@ -64,6 +69,7 @@ import { CompetitionComponent } from './component/competition/competition.compon
     MatTreeModule,
     MatStepperModule,
     MatRadioModule,
+    MatCardModule,
     MatChipsModule
   ],
   providers: [

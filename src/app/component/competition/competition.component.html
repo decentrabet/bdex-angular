@@ -1,10 +1,36 @@
 <div class="content">
-    <table>
-        <tr>
-            <th>Competições</th>
+    <table mat-table
+       [dataSource]="dataSource" multiTemplateDataRows
+       class="mat-elevation-z8">
+        <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay; let i = index">
+            <th id="colunaheader" mat-header-cell *matHeaderCellDef><b>{{columnsLabelsToDisplay[i]}}</b></th>
+            <td mat-cell *matCellDef="let element"> {{element[column]}} <button [routerLink]="['/games']" [state]="element" style="float:right"><mat-icon>search</mat-icon></button></td>
+        </ng-container>
+
+        <ng-container matColumnDef="expandedDetail">
+            <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
+            <div class="example-element-detail"
+                [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+                <div class="example-element-diagram">
+                <div class="example-element-position"> teste1 </div>
+                <div class="example-element-symbol"> teste2 </div>
+                <div class="example-element-name"> teste3 </div>
+                <div class="example-element-weight"> teste4 </div>
+                </div>
+                <div class="example-element-description">
+                teste5
+                <span class="example-element-description-attribution"> -- </span>
+                </div>
+            </div>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+        <tr mat-row *matRowDef="let element; columns: columnsToDisplay;"
+            class="example-element-row"
+            [class.example-expanded-row]="expandedElement === element"
+            (click)="expandedElement = expandedElement === element ? null : element">
         </tr>
-        <tr *ngFor="let c of dataSource">
-            <td>{{c.name}}</td>
-        </tr>
+        <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
     </table>
 </div>
